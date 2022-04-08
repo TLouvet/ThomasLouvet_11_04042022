@@ -1,0 +1,25 @@
+@import '../../../style/global.scss';
+
+.footer {
+  &__container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 65px 0 30px 0;
+    font-size: 24px;
+
+    @include mobile-res {
+      padding-bottom: 50px 0;
+      font-size: $mobile-font-size;
+    }
+
+    @include tablet-res {
+      font-size: $tablet-font-size;
+    }
+
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+  }
+}

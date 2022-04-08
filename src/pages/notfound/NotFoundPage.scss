@@ -1,0 +1,40 @@
+@import '../../style/global.scss';
+
+.notfound {
+  text-align: center;
+
+  &__title {
+    font-size: 288px;
+    margin-bottom: 65px;
+
+    @include mobile-res {
+      margin-top: 150px;
+      margin-bottom: 20px;
+      font-size: 96px;
+    }
+
+    @include tablet-res {
+      font-size: 144px;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &__subtitle {
+    font-size: 36px;
+
+    @include mobile-res {
+      font-size: 18px;
+      margin-bottom: 130px;
+    }
+
+    @include tablet-res {
+      font-size: 24px;
+      margin-bottom: 150px;
+    }
+  }
+
+  &__link {
+    color: $mainColor;
+  }
+}

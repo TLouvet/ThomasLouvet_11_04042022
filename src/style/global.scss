@@ -1,0 +1,39 @@
+$hompageCardsSectionBackground: #F6F6F6;
+$mainColor: #FF6060;
+$mobile-font-size: 12px;
+$tablet-font-size: 16px;
+
+// Breakpoints
+@mixin mobile-res {
+  @media screen and (max-width: 599px) {
+    @content
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+@mixin tablet-res {
+  @media screen and (min-width:600px) and (max-width:1199px) {
+    @content
+  }
+}
+
+@mixin laptop-res {
+  @media screen and (min-width:1025px) and (max-width:1199px) {
+    @content
+  }
+}
+
+@mixin desktop-res {
+  @media screen and (min-width:1200px) and (max-width:1599px) {
+    @content
+  }
+}
+
+@mixin bigscreen-res {
+  @media screen and (min-width:1600px) {
+    @content
+  }
+}

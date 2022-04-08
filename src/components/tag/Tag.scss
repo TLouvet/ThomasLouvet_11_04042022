@@ -1,0 +1,29 @@
+@import '../../style/global.scss';
+
+.tag {
+
+  width: 115px;
+  background-color: $mainColor;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile-res {
+    font-size: 12px;
+    width: 65px;
+  }
+
+  @include tablet-res {
+    font-size: 14px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

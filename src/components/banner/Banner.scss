@@ -1,0 +1,103 @@
+@import "../../style/global.scss";
+
+.banner {
+  position: relative;
+  mix-blend-mode: darken;
+  margin-bottom: 40px;
+
+  @include mobile-res {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 200px;
+    z-index: 10;
+    cursor: pointer;
+
+    @include mobile-res {
+      top: 100px;
+      width: 30px;
+      height: 43px;
+    }
+
+    @include tablet-res {
+      top: 150px;
+      width: 45px;
+      height: 63px;
+    }
+
+    &__right {
+      right: 10px;
+    }
+
+    &__left {
+      left: 10px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    border-radius: 25px;
+    width: 100%;
+    filter: brightness(0.7);
+
+    @include mobile-res {
+      border-radius: 10px;
+      height: 110px;
+    }
+
+    @include tablet-res {
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    @include desktop-res {
+      height: 220px;
+    }
+
+    @include bigscreen-res {
+      height: 220px;
+    }
+
+    &--product {
+      height: 415px;
+      filter: brightness(1);
+      object-fit: cover;
+
+      @include mobile-res {
+        border-radius: 10px;
+        height: 255px;
+      }
+
+      @include tablet-res {
+        height: 330px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    top: -150px;
+    color: white;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+
+    @include mobile-res {
+      font-size: 24px;
+      left: 15px;
+      top: -90px;
+      width: 190px;
+      text-align: left;
+    }
+
+    @include tablet-res {
+      font-size: 32px;
+      top: -100px;
+    }
+  }
+}

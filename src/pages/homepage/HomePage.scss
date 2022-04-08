@@ -1,0 +1,36 @@
+@import '../../style/global.scss';
+
+.cards {
+  background-color: $hompageCardsSectionBackground;
+  padding: 55px 50px;
+
+  margin-top: -60px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+
+
+  @include mobile-res {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    grid-gap: 20px;
+    background-color: transparent;
+  }
+
+  @include tablet-res {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 55px 0;
+    background-color: transparent;
+    justify-items: center;
+    grid-gap: 30px;
+    border-radius: 0;
+  }
+
+  @include desktop-res {
+    width: 91%;
+    padding: 55px 4.5%;
+  }
+
+}

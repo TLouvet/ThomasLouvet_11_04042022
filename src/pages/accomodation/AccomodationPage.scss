@@ -1,0 +1,116 @@
+@import '../../style/global.scss';
+
+.accomodation {
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @include mobile-res {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+
+    @include tablet-res {
+      font-size: 24px;
+    }
+
+    @include mobile-res {
+      font-size: 18px;
+    }
+  }
+
+  &__location {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include mobile-res {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile-res {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-bottom: 25px;
+
+      @include mobile-res {
+        margin-bottom: 0;
+      }
+
+      &__name {
+        font-size: 18px;
+        width: 50%;
+        text-align: right;
+        margin: 0;
+        margin-right: 10px;
+
+        @include mobile-res {
+          width: 35%;
+          font-size: 12px;
+        }
+      }
+
+      &__picture {
+        border-radius: 100px;
+        width: 64px;
+        height: 64px;
+
+        @include mobile-res {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__rating {
+    margin-left: 10px;
+
+    @include mobile-res {
+      width: 15px;
+      height: 15px;
+      margin-left: 5px;
+    }
+
+    @include tablet-res {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__dropdown-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 75px;
+
+    @include mobile-res {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

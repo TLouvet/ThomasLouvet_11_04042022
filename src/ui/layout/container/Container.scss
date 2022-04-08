@@ -1,0 +1,19 @@
+@import '../../../style/global.scss';
+
+.mainContainer {
+  padding: 0 100px;
+  max-width: 1440px;
+  margin: auto;
+
+  @include mobile-res {
+    padding: 0 20px;
+  }
+
+  @include tablet-res {
+    padding: 0 30px;
+  }
+
+  @include desktop-res {
+    padding: 0 6%;
+  }
+}

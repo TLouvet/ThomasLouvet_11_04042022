@@ -1,0 +1,68 @@
+@import '../../style/global.scss';
+
+.dropdown {
+  &__section {
+    margin: auto;
+  }
+
+  &__container {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+    height: -webkit-fill-available;
+
+    @include mobile-res {
+      font-size: 12px;
+    }
+
+    @include tablet-res {
+      font-size: 16px;
+    }
+  }
+
+  &__uppercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: $mainColor;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__arrow {
+    cursor: pointer;
+
+    @include mobile-res {
+      width: 15px;
+      height: 10px;
+    }
+
+    @include tablet-res {
+      width: 20px;
+      height: 13px;
+    }
+  }
+
+  &__undercontainer {
+    background-color: $hompageCardsSectionBackground;
+    border-radius: 5px;
+    padding: 40px 20px;
+
+    @include mobile-res {
+      padding-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../../style/global.scss';
+
+.header {
+  padding: 40px 100px 45px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+
+  max-width: 1440px;
+
+  @include mobile-res {
+    font-size: $mobile-font-size;
+    padding: 20px;
+  }
+
+  @include tablet-res {
+    font-size: $tablet-font-size;
+    padding: 30px;
+  }
+
+  @include bigscreen-res {
+    margin: auto;
+  }
+
+  &__navlist {
+    display: flex;
+    margin: 0;
+
+    &__item {
+      margin-left: 60px;
+      color: #FF6060;
+      text-decoration: none;
+
+      @include mobile-res {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__logo {
+    @include mobile-res {
+      width: 150px;
+      height: 50px;
+    }
+
+    @include tablet-res {
+      width: 200px;
+      height: 67px;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

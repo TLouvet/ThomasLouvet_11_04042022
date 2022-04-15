@@ -71,6 +71,10 @@
       position: relative;
       color: white;
       top: -70px;
+
+      @include mobile-res {
+        display: none;
+      }
     }
 
     &--product {

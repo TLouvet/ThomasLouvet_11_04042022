@@ -33,6 +33,7 @@ export const AccomodationPage = () => {
   }, [displayedPicture, setDisplayedPicture, pictures.length]);
 
   useEffect(() => {
+    window.scroll(0, 0);
     if (!accomodation) {
       navigate('/notfound');
     }
@@ -40,7 +41,7 @@ export const AccomodationPage = () => {
 
   return (
     <>
-      <Banner picture={pictures[displayedPicture]} isProductPageBanner scrollable={!onlyCover} handleChange={handlePictureChange} />
+      <Banner picture={pictures[displayedPicture]} isProductPageBanner scrollable={!onlyCover} handleChange={handlePictureChange} pictureNumber={pictures.length} currentPicture={displayedPicture} />
 
       <section id="information" className="accomodation__information">
         <div>

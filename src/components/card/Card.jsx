@@ -9,7 +9,7 @@ import './Card.scss';
  */
 export const Card = ({ title, picture, id }) => (
   <Link to={`/accomodation/${id}`} className='card' aria-label={`A louer: ${title}`}>
-    <img src={picture} alt={`A louer: ${title}`} className='card__img' />
+    <img src={picture} alt="" className='card__img' />
     <p className='card__text'>{title}</p>
   </Link>
 )

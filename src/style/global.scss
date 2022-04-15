@@ -3,15 +3,15 @@ $mainColor: #FF6060;
 $mobile-font-size: 12px;
 $tablet-font-size: 16px;
 
+.flex {
+  display: flex;
+}
+
 // Breakpoints
 @mixin mobile-res {
   @media screen and (max-width: 599px) {
     @content
   }
-}
-
-.flex {
-  display: flex;
 }
 
 @mixin tablet-res {

@@ -19,9 +19,9 @@ export const Dropdown = ({ title, text }) => {
 
   return (
     <div className="dropdown__container">
-      <div className="dropdown__uppercontainer">
+      <div className="dropdown__uppercontainer" onClick={handleClick}>
         <p className="dropdown__text">{title}</p>
-        <button type="button" aria-label="Accéder au texte associé" className="dropdown__button" onClick={handleClick}>
+        <button type="button" aria-label="Accéder au texte associé" className="dropdown__button" >
           <img src={isDropped ? up : down} alt='' className="dropdown__arrow" />
         </button>
       </div>

@@ -38,6 +38,10 @@
     }
   }
 
+  &__selector {
+    width: 100%;
+  }
+
   &__img {
     position: relative;
     border-radius: 25px;
@@ -60,6 +64,13 @@
 
     @include bigscreen-res {
       height: 220px;
+    }
+
+    &__counter {
+      text-align: center;
+      position: relative;
+      color: white;
+      top: -70px;
     }
 
     &--product {
@@ -91,7 +102,7 @@
       font-size: 24px;
       left: 15px;
       top: -90px;
-      width: 190px;
+      width: 220px;
       text-align: left;
     }
 

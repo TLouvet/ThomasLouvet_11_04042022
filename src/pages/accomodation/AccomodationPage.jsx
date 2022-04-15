@@ -41,7 +41,14 @@ export const AccomodationPage = () => {
 
   return (
     <>
-      <Banner picture={pictures[displayedPicture]} isProductPageBanner scrollable={!onlyCover} handleChange={handlePictureChange} pictureNumber={pictures.length} currentPicture={displayedPicture} />
+      <Banner
+        picture={pictures[displayedPicture]}
+        isProductPageBanner
+        scrollable={!onlyCover}
+        handleChange={handlePictureChange}
+        pictureNumber={pictures.length}
+        currentPicture={displayedPicture}
+      />
 
       <section id="information" className="accomodation__information">
         <div>
